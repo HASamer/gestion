@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" stylesheets="@../Styles/Styles.css" minWidth="-Infinity" prefHeight="670.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gca.Controlers.LoginController">
+   <children>
+      <ImageView fitHeight="846.0" fitWidth="1057.0" layoutX="14.0" layoutY="-90.0" pickOnBounds="true" AnchorPane.bottomAnchor="-86.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="-90.0">
+         <image>
+            <Image url="@../Images/wallpaperlogin.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="339.0" layoutY="97.0" prefHeight="505.0" prefWidth="402.0" styleClass="box">
+         <children>
+            <Label layoutX="60.0" layoutY="38.0" text="Connection" textFill="#ffde00">
+               <font>
+                  <Font name="Century Gothic" size="48.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailVal" layoutX="45.0" layoutY="171.0" prefHeight="45.0" prefWidth="308.0" promptText="Nom d'utilisateur ou Email" styleClass="textFields">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordVal" layoutX="47.0" layoutY="263.0" prefHeight="45.0" prefWidth="308.0" promptText="Mot De Passe" styleClass="textFields">
+               <font>
+                  <Font name="Century Gothic" size="20.0" />
+               </font>
+            </PasswordField>
+            <MFXButton layoutX="47.0" layoutY="370.0" minHeight="37.0" minWidth="131.0" onMouseClicked="#connexion" text="Connexion">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </MFXButton>
+            <MFXButton layoutX="224.0" layoutY="370.0" minHeight="37.0" minWidth="131.0" onMouseClicked="#cancel" text="Fermer">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </MFXButton>
+            <Label fx:id="errorMessage" alignment="CENTER" layoutX="7.0" layoutY="469.0" prefHeight="22.0" prefWidth="388.0" text="Label" textAlignment="CENTER" textFill="RED" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="469.0">
+               <font>
+                  <Font name="Century Gothic" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

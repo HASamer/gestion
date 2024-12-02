@@ -1,0 +1,12 @@
+package com.gca.Models.Enumeration;
+
+public enum Specialite {
+    MEDECINE_GENERALE,
+    CHIRURGIE_GENERALE,
+    CARDIOLOGIE,
+    PEDIATRIE,
+    CHIRURGIE_ORTHOPEDIQUE,
+    CHIRURGIE_CARDIAQUE,
+    NEUROCHIRURGIE,
+    MEDECINE_DU_TRAVAIL
+}

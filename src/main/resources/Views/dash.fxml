@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="670.0" prefWidth="1300.0" styleClass="gradient-background" stylesheets="@../Styles/Styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <VBox prefHeight="872.0" prefWidth="290.0" spacing="10.0" styleClass="container" stylesheets="@../Styles/Styles.css" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <children>
+                <HBox alignment="CENTER" prefHeight="121.0" prefWidth="290.0">
+                    <children>
+                        <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/jimmy-fallon.png" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" prefHeight="95.0" prefWidth="194.0">
+                            <children>
+                                <Label prefHeight="26.0" prefWidth="182.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Foulen Ben Felten" textFill="#0d0707" wrapText="true">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label prefHeight="30.0" prefWidth="130.0" text="Administrateur ">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.37" prefHeight="0.75" prefWidth="230.0" styleClass="line-color" stylesheets="@../Styles/Styles.css">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </Pane>
+                <VBox prefHeight="549.0" prefWidth="290.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/menu.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Dashboard" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/silhouette-dutilisateurs-multiples.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Employés" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/chef-de-projet.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Gestion " textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/rendez-vous.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Rendez-vous" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/fournisseur.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Consultations" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/pharmacy_17084889.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Pharmacie" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/dashboard_2329087.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Statistiques" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/business_15947007.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Rapports" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/settings.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="33.0" prefWidth="151.0" styleClass="shadow" stylesheets="@../Styles/Styles.css" text="Paramétres" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" top="10.0" />
+            </BorderPane.margin>
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <HBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="954.0" spacing="20.0" stylesheets="@../Styles/Styles.css" VBox.vgrow="ALWAYS">
+                            <children>
+                                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="314.0" styleClass="container">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="318.0" text="Total des patients" textFill="#0d0707">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" text="278 " textAlignment="CENTER">
+                                            <font>
+                                                <Font size="36.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="252.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="318.0" text="Total des médecins" textFill="#0d0707">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" text="34" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="36.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="250.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="245.0" text="Total des lits occupés" textFill="#0d0707">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" text="198" textAlignment="CENTER">
+                                            <font>
+                                                <Font size="36.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="906.0">
+                    <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="866.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <VBox layoutX="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="221.0" prefWidth="853.0">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="318.0" text="Outpatients Vs Inpatients" textFill="#0d0707">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <BarChart maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="822.0" titleSide="BOTTOM">
+                                            <xAxis>
+                                                <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                            <VBox.margin>
+                                                <Insets top="20.0" />
+                                            </VBox.margin>
+                                        </BarChart>
+                                    </children>
+                                    <padding>
+                                        <Insets left="10.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets left="45.0" />
+                            </VBox.margin>
+                        </Pane>
+                    </children>
+                </VBox>
+                <HBox prefHeight="262.0" prefWidth="954.0" spacing="20.0">
+                    <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="300.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="268.0" text="Stock de médicaments" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                                <AreaChart layoutX="-3.0" layoutY="37.0" prefHeight="243.0" prefWidth="303.0">
+                                    <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                    </xAxis>
+                                    <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                    </yAxis>
+                                </AreaChart>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </Pane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="300.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="165.0" text="Suivi Financier" textFill="#0d0707">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                                <LineChart layoutX="-6.0" layoutY="44.0" prefHeight="232.0" prefWidth="296.0">
+                                    <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                    </xAxis>
+                                    <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                    </yAxis>
+                                </LineChart>
+                            </children>
+                        </Pane>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="230.0" styleClass="container" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-5.0" prefHeight="37.0" prefWidth="238.0" text="Sexe" textFill="#0d0707" wrapText="true">
+                                    <font>
+                                        <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                                <PieChart layoutX="2.0" layoutY="50.0" prefHeight="242.0" prefWidth="222.0" />
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="690" prefWidth="1360" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gca.Controlers.ApplicationShapeController">
+    <children>
+        <BorderPane prefHeight="690.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <VBox prefHeight="670.0" prefWidth="290.0" spacing="10.0" styleClass="container" stylesheets="@../Styles/Styles.css" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <!-- User Info Section -->
+                        <HBox alignment="CENTER" prefHeight="119.0" spacing="10.0" padding="20.0">
+                            <children>
+                                <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/jimmy-fallon.png" />
+                                    </image>
+                                </ImageView>
+                                <VBox alignment="CENTER" spacing="5.0">
+                                    <children>
+                                        <Label text="Foulen Ben Felten" textFill="#0d0707" styleClass="shadow" stylesheets="@../Styles/Styles.css" wrapText="true">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Administrateur">
+                                            <font>
+                                                <Font name="Arial Rounded MT Bold" size="14.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <!-- Divider -->
+                        <Pane prefHeight="0.75" prefWidth="230.0" styleClass="line-color" stylesheets="@../Styles/Styles.css" opacity="0.37" />
+
+                        <!-- Menu Options -->
+                        <VBox spacing="10.0">
+                            <children>
+                                <!-- Menu Item Template -->
+                                <HBox alignment="CENTER" prefHeight="60.0" spacing="20.0">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/menu.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Dashboard" textFill="#0d0707" styleClass="shadow" stylesheets="@../Styles/Styles.css">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <!-- Repeat similar blocks for each menu item -->
+                                <HBox alignment="CENTER" prefHeight="60.0" spacing="20.0">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/silhouette-dutilisateurs-multiples.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Employés" textFill="#0d0707" styleClass="shadow" stylesheets="@../Styles/Styles.css">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <!-- Add other menu items here -->
+                                <HBox alignment="CENTER" prefHeight="60.0" spacing="20.0">
+                                    <children>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/settings.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label text="Paramètres" textFill="#0d0707" styleClass="shadow" stylesheets="@../Styles/Styles.css">
+                                            <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <StackPane fx:id="pageArea" prefHeight="670.0" prefWidth="1070.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

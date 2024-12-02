@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="854.0" prefWidth="1600.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gca.Controlers.DashboardController">
+      <VBox prefHeight="690.0" prefWidth="917.0" spacing="20.0" alignment="CENTER">
+         <children>
+            <HBox spacing="20.0" alignment="CENTER" prefWidth="917.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Total des patients" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <Label text="278" alignment="CENTER" textFill="#000000" style="-fx-font-size: 36;" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Total des médecins" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <Label text="34" alignment="CENTER" textFill="#000000" style="-fx-font-size: 36;" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Total des lits occupés" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <Label text="198" alignment="CENTER" textFill="#000000" style="-fx-font-size: 36;" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="220.0" prefWidth="917.0" styleClass="container" style="-fx-padding: 10;">
+               <children>
+                  <Label text="Outpatients Vs Inpatients" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                  <BarChart prefHeight="180.0" prefWidth="800.0" />
+               </children>
+            </VBox>
+            <HBox spacing="20.0" alignment="CENTER" prefWidth="917.0">
+               <children>
+                  <Pane prefHeight="240.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Stock de médicaments" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <AreaChart layoutY="40.0" prefHeight="180.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="240.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Suivi Financier" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <LineChart layoutY="40.0" prefHeight="180.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="240.0" prefWidth="300.0" styleClass="container" style="-fx-padding: 10;">
+                     <children>
+                        <Label text="Sexe" alignment="CENTER" textFill="#0d0707" style="-fx-font-size: 24; -fx-font-family: 'Berlin Sans FB Demi Bold';" />
+                        <PieChart layoutY="40.0" prefHeight="180.0" prefWidth="280.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+</AnchorPane>
